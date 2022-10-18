@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +9,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  color: #000;
+  font-family: acumin-pro,Arial,Helvetica,sans-serif;
+  font-size: 16px;
 }
 
 .inputs {
@@ -18,22 +27,201 @@ body {
   gap: 1rem;
 }
 
-.generate-btn {
-  width: 100%;
-  height: 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #000;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 1rem;
+.generate-btn{
+  background-image: url("https://www.lastpass.com/assets/images/cdn/icon-generate-new.svg");
+  background-color: #fff;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 0;
+    display: inline;
+    height: 31px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 32px;
+    align-items: center;
 }
 
 .password {
-  margin-top: 1rem;
+  margin-top: auto;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  background-color: #fff;
+    border-radius: 8px;
+    height: 50px;
+    max-width: 400px;
+    padding-right: 95px;
+    width: 100%;
 }
+.form1{
+  height: 115px;
+  margin: 0 auto 20px;
+  padding: 34px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  border: 1px;
+  border-bottom: 0;
+  display: flex;
+  max-width: 800px;
+  position: relative;
+}
+.password{
+  border: 0;
+    box-shadow: none;
+    color: #000;
+    font-family: monospace;
+    font-size: 1.75rem;
+    height: 38px;
+    text-align: left;
+}
+
+.inpass{
+  
+}
+
+/*#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+/*.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+/*.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+*/
+
+/*.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}*/
+
+
+/* meter {
+  /* Reset the default appearance */
+ /* -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  margin: 0 auto 1em;
+  width: 100%;
+  height: 0.5em;
+
+  /* Applicable only to Firefox */
+ /* background: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Webkit based browsers */
+/*meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+/* Gecko based browsers */
+/*meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+/*.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}*/

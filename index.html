@@ -4,14 +4,21 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>-->
   <body>
     <div class="container">
       <h1>Password Generator</h1>
+      <div class="form1">
+      <p type="text" class="password" id="generated-password">PASSWORD</p>
+      <button class="generate-btn" onClick="generatePassword()">
+    </button> </div>
+    
       <div class="inputs">
+        <b><form class="form2">
         <div>
           <input type="checkbox" name="include-numbers" id="include-numbers" />
           <label for="include-numbers">Include Numbers</label>
-        </div>
+        </div> 
         <div>
           <input type="checkbox" name="include-symbols" id="include-symbols" />
           <label for="include-symbols">Include Symbols</label>
@@ -20,8 +27,7 @@
           <input
             type="checkbox"
             name="include-uppercase"
-            id="include-uppercase"
-          />
+            id="include-uppercase"/>
           <label for="include-uppercase">Include Uppercase</label>
         </div>
         <div>
@@ -34,13 +40,23 @@
         </div>
         <div>
           <label for="password-length">Password Length</label>
-          <input type="number" name="password-length" id="password-length" />
-        </div>
+          <input type="number" name="password-length" id="password-length" class="inpass" />
+          <!--<div class="slidecontainer">
+            <input type="range" min="1" max="25" value="25" class="slider" id="myRange">
+            <input id="inputID">Value: <span id="demo"></span></p>
+          </div>-->
+        </div></b>
+      </form>
       </div>
-      <button class="generate-btn" onClick="generatePassword()">
-        Generate Password
-      </button>
-      <p class="password" id="generated-password"></p>
+      <!--<meter max="4" id="password-strength-meter"></meter>
+      <p id="password-strength-text"></p> -->
+      
+      <!-- <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copy text
+          </button>
+        </div> -->
     </div>
     <script src="./script.js"></script>
   </body>
